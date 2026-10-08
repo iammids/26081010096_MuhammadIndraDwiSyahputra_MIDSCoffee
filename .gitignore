@@ -1,0 +1,7 @@
+# File lokal yang tidak perlu masuk repository
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.log
+.env
