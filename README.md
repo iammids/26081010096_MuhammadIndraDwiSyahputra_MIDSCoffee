@@ -154,41 +154,5 @@ Sebelum eksekusi: **8 menu, 6 pelanggan, 8 pesanan**. Setelah UPDATE/DELETE di f
 
 Untuk keamanan contoh lokal ini, penulisan database menggunakan **prepared statements**, keluaran HTML di-*escape*, pengubahan/penghapusan melalui **POST dan token CSRF**, validasi kolom dan konfirmasi sebelum hapus. Proyek ini ditujukan untuk localhost/demonstrasi tugas; **tambahkan sistem login dan otorisasi** jika ingin dipublikasikan sebagai aplikasi sungguhan. Jangan unggah kredensial database sungguhan ke GitHub.
 
-## 6. Kesesuaian dengan rubrik PDF (halaman 27–30)
-
-- [x] Database MySQL **3 tabel yang saling berelasi** dan minimal hubungan **1-to-Many**.
-- [x] Dua tabel **master**, masing-masing ID + 4 kolom data relevan.
-- [x] Satu tabel **transaksi** dengan **2 Foreign Key** dan kolom transaksi.
-- [x] `schema.sql`: **DDL CREATE** (termasuk PK/FK), **DML INSERT ≥5 baris per tabel**.
-- [x] Query contoh **SELECT, JOIN, UPDATE, DELETE**.
-- [x] `README.md`: entitas, atribut, relasi, kardinalitas, dan cara menjalankan.
-- [x] `services/config.php`: koneksi database dengan `mysqli`.
-- [x] `index.php`: **3 tabel HTML** dari query database melalui **while + fetch_assoc()**.
-- [x] `css/style.css`: satu warna brand, padding, border, shadow, **flexbox/grid**, **responsive**.
-- [x] Menyediakan praktik **Challenge 1** dengan studi kasus coffee shop **MIDS Coffee**.
-
-## 7. Upload GitHub dan pengumpulan
-
-1. Buat **repository PUBLIC** bernama:
-
-   ```text
-   26081010096_MuhammadIndraDwiSyahputra_MIDSCoffee
-   ```
-
-2. Buka terminal VS Code pada folder proyek, lalu jalankan:
-
-   ```bash
-   git init
-   git add .
-   git commit -m "feat: website database MIDS Coffee ISCOM Day 3"
-   git branch -M main
-   git remote add origin https://github.com/USERNAME/26081010096_MuhammadIndraDwiSyahputra_MIDSCoffee.git
-   git push -u origin main
-   ```
-
-   Ganti `USERNAME` dengan username GitHub kamu. Jika Git belum dikonfigurasi, jalankan dulu `git config --global user.name "Nama Kamu"` dan `git config --global user.email "email-kamu@example.com"`.
-3. Pastikan repository dapat diakses publik, lalu **submit LINK REPOSITORY ke Google Form pada slide 30 PDF**.
-
-**Deadline pada PDF: Kamis, 8 Oktober 2026, pukul 23.59 WIB.**
 
 **Penting:** PHP/MySQL memerlukan server, jadi **tidak bisa dijalankan lewat GitHub Pages**. GitHub dipakai sebagai pengumpulan kode; jalankan demonya secara lokal di Laragon.
